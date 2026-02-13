@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Indian Girls Power - Staffing Services</title>
+<title>Indian Girls Power</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 html { scroll-behavior: smooth; }
 
-body {
+body{
   margin:0;
   font-family: Arial, sans-serif;
   background:#f5f5f5;
 }
 
-header {
+header{
   background:#c62828;
   color:white;
-  padding:15px 0;
   text-align:center;
+  padding:15px 0;
   position:sticky;
   top:0;
 }
 
-nav a {
+nav a{
   color:white;
-  margin:0 15px;
   text-decoration:none;
+  margin:0 15px;
   font-weight:bold;
 }
 
-section {
-  padding:80px 20px;
+section{
+  padding:70px 20px;
   text-align:center;
 }
 
-.hero {
+.hero h1{
+  color:#c62828;
+  font-size:34px;
+}
+
+.btn{
+  background:#1976d2;
+  color:white;
+  padding:12px 25px;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+  margin-top:15px;
+}
+
+.services{
   background:white;
 }
 
-.hero h1 {
-  color:#c62828;
-  font-size:36px;
+.about{
+  background:#eeeeee;
 }
 
-.btn {
-  display:inline-block;
-  padding:12px 25px;
-  margin:10px;
-  background:#1976d2;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
+.contact{
+  background:white;
 }
 
-.services {
-  background:#fff;
-}
-
-.service-container {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-}
-
-.service-box {
-  background:#f9f9f9;
-  width:220px;
-  padding:15px;
-  border-radius:12px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.service-box:hover {
-  transform:translateY(-5px);
-}
-
-.service-box img {
-  width:100%;
-  height:150px;
-  object-fit:cover;
-  border-radius:10px;
-}
-
-.service-box h3 {
-  margin-top:10px;
-  color:#c62828;
-}
-
-.about { background:#eee; }
-
-.contact { background:#fff; }
-
-footer {
+footer{
   background:#222;
   color:white;
   padding:20px;
 }
 
-/* WhatsApp Button */
-.whatsapp {
+.whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
@@ -109,6 +76,7 @@ footer {
   padding:15px;
   border-radius:50%;
   text-decoration:none;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -134,44 +102,16 @@ footer {
 <section class="services" id="services">
 <h2>Our Services</h2>
 
-<div class="service-container">
-
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="House Maid">
-<h3>House Maid</h3>
+<div style="margin-top:30px;">
+  <img src="services.png" alt="Our Services" 
+  style="max-width:100%; border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.2);">
 </div>
 
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Baby Care">
-<h3>Baby Care</h3>
-</div>
-
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1604908177522-432f3c0d4c2d" alt="Cook">
-<h3>Cook</h3>
-</div>
-
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="Patient Care">
-<h3>Patient Care</h3>
-</div>
-
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980" alt="House Boy">
-<h3>House Boy</h3>
-</div>
-
-<div class="service-box">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Driver">
-<h3>Driver</h3>
-</div>
-
-</div>
 </section>
 
 <section class="about" id="about">
 <h2>About Us</h2>
-<p>We provide trained and verified domestic staff across Mumbai including maids, cooks, babysitters, and drivers.</p>
+<p>We provide trained and verified domestic staff across Mumbai including maids, cooks, babysitters, patient care and drivers.</p>
 </section>
 
 <section class="contact" id="contact">
