@@ -57,14 +57,36 @@ section {
   background:#fff;
 }
 
+.service-container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
 .service-box {
-  display:inline-block;
   background:#f9f9f9;
-  padding:20px;
-  margin:15px;
   width:220px;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.service-box:hover {
+  transform:translateY(-5px);
+}
+
+.service-box img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
   border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+  margin-top:10px;
+  color:#c62828;
 }
 
 .about { background:#eee; }
@@ -77,7 +99,7 @@ footer {
   padding:20px;
 }
 
-/* WhatsApp */
+/* WhatsApp Button */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -106,17 +128,45 @@ footer {
 <section class="hero" id="home">
 <h1>Trusted Domestic Staffing Services in Mumbai</h1>
 <p>Providing Reliable Household Help for Your Needs</p>
-<a href="#contact" class="btn">Get Staff</a>
+<a href="#contact" class="btn">Contact Us</a>
 </section>
 
 <section class="services" id="services">
 <h2>Our Services</h2>
-<div class="service-box">House Maid</div>
-<div class="service-box">Baby Care</div>
-<div class="service-box">Cook</div>
-<div class="service-box">Patient Care</div>
-<div class="service-box">House Boy</div>
-<div class="service-box">Driver</div>
+
+<div class="service-container">
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="House Maid">
+<h3>House Maid</h3>
+</div>
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Baby Care">
+<h3>Baby Care</h3>
+</div>
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1604908177522-432f3c0d4c2d" alt="Cook">
+<h3>Cook</h3>
+</div>
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="Patient Care">
+<h3>Patient Care</h3>
+</div>
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980" alt="House Boy">
+<h3>House Boy</h3>
+</div>
+
+<div class="service-box">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Driver">
+<h3>Driver</h3>
+</div>
+
+</div>
 </section>
 
 <section class="about" id="about">
